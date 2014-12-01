@@ -25,7 +25,6 @@ class ViewController: UIViewController {
     
     @IBAction func didClickGo(AnyObject) {
         
-        var text = textField.text
         // Random Button for Wikipedia
         var randomURL = "http://en.wikipedia.org/wiki/Special:Random"
         var url = NSURL(string: randomURL)

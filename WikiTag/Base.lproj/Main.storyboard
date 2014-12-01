@@ -62,7 +62,7 @@
                     </view>
                     <connections>
                         <outlet property="textField" destination="MWC-nY-c2B" id="NsY-kR-6kG"/>
-                        <outlet property="webView" destination="Qre-PV-j9G" id="Vjw-Ki-Izl"/>
+                        <outlet property="webView" destination="Qre-PV-j9G" id="Ggf-2e-phL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
