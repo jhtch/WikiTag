@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var textField:UITextField!
+    @IBOutlet var webView:UIWebView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +22,17 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    @IBAction func didClickGo(AnyObject) {
+        
+        var text = textField.text
+        
+        var randomURL = "http://en.wikipedia.org/wiki/Special:Random"
+        var url = NSURL(string: randomURL)
+        var request = NSURLRequest(URL: url!)
+        webView.loadRequest(request)
+        
+    }
 
 }
 

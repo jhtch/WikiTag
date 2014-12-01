@@ -405,6 +405,7 @@
 				C4D9C8E31A26991100AD87E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4D9C8E41A26991100AD87E1 /* Build configuration list for PBXNativeTarget "WikiTagTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +414,7 @@
 				C4D9C8E61A26991100AD87E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
