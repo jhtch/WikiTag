@@ -16,18 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ucs-i4-XoK">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qre-PV-j9G">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                                </variation>
-                            </webView>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MRb-ZW-Yxh">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
                                 </variation>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAl-5b-i1f">
@@ -54,16 +47,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="Ucs-i4-XoK"/>
-                                <exclude reference="MRb-ZW-Yxh"/>
+                                <exclude reference="Qre-PV-j9G"/>
                                 <exclude reference="kAl-5b-i1f"/>
                                 <exclude reference="MWC-nY-c2B"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="Ucs-i4-XoK"/>
-                                <include reference="MRb-ZW-Yxh"/>
+                                <include reference="Qre-PV-j9G"/>
                                 <include reference="kAl-5b-i1f"/>
                                 <include reference="MWC-nY-c2B"/>
                             </mask>
@@ -71,7 +62,7 @@
                     </view>
                     <connections>
                         <outlet property="textField" destination="MWC-nY-c2B" id="NsY-kR-6kG"/>
-                        <outlet property="webView" destination="Ucs-i4-XoK" id="x78-e6-UQj"/>
+                        <outlet property="webView" destination="Qre-PV-j9G" id="Vjw-Ki-Izl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
