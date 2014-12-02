@@ -29,22 +29,28 @@ class ViewController: UIViewController {
     
     @IBAction func didClickGo(AnyObject) {
         
+        //let screenSize: CGRect = UIScreen.mainScreen().bounds
+        //webView.bounds = screenSize
+        
         let screenSize: CGRect = UIScreen.mainScreen().bounds
         webView.bounds = screenSize
+        self.webView.scalesPageToFit = true;
+
         
         // Random Button for Wikipedia
         var randomURL = "http://en.wikipedia.org/wiki/Special:Random"
         var url = NSURL(string: randomURL)
         var request = NSURLRequest(URL: url!)
         
-        self.webView.scalesPageToFit = false;
-        
+        // load the webpage
         webView.loadRequest(request)
         
-        textLabel.text = "hello, world"
-    
-        //var text = request.
-        //textField.text = text
+        // get current URL from request
+        var curURL = self.webView.request?.URL
+        
+        // set the label text to the current URL (which isn't loaded onto page until Go is hit again)
+        textLabel.text = curURL?.absoluteString
+
     }
 
 }
