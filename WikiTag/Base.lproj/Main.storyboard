@@ -15,42 +15,56 @@
                     <view key="view" contentMode="scaleToFill" id="nJ6-O4-3A4">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WikiTag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opd-QG-9Po" colorLabel="IBBuiltInLabel-Yellow">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="51"/>
-                                <color key="highlightedColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="104" y="129" width="192" height="97"/>
-                                </variation>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgN-lG-4BA">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="55"/>
                                 <state key="normal" title="PLAY!">
                                     <color key="titleColor" red="0.021077191427902875" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="highlighted" title="hello"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="105" y="263" width="191" height="49"/>
+                                    <rect key="frame" x="105" y="262" width="191" height="65"/>
                                 </variation>
                                 <connections>
                                     <segue destination="vXZ-lx-hvc" kind="show" id="W95-9m-OzI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WikiTag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opd-QG-9Po" colorLabel="IBBuiltInLabel-Yellow">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="66"/>
+                                <color key="highlightedColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="67" y="115" width="266" height="116"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWi-Ve-vCe">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="52"/>
+                                <state key="normal" title="Rules">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="88" y="307" width="224" height="127"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="UL8-6u-2cb" kind="show" id="5M3-jr-Ndi"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.67924186646991769" green="0.81445761503102332" blue="0.89165088383838387" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="opd-QG-9Po"/>
                                 <exclude reference="hgN-lG-4BA"/>
+                                <exclude reference="opd-QG-9Po"/>
+                                <exclude reference="bWi-Ve-vCe"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="opd-QG-9Po"/>
                                 <include reference="hgN-lG-4BA"/>
+                                <include reference="opd-QG-9Po"/>
+                                <include reference="bWi-Ve-vCe"/>
                             </mask>
                         </variation>
                     </view>
@@ -126,6 +140,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1614" y="27"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ug6-sO-HxO">
+            <objects>
+                <viewController id="UL8-6u-2cb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QU2-v7-HaM"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xcx-rH-0GP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ubf-wp-zBG">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w90-DE-ted" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1651.5" y="787.5"/>
         </scene>
     </scenes>
 </document>
