@@ -16,11 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qre-PV-j9G">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EpG-e2-Oaz">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                 </variation>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAl-5b-i1f">
@@ -35,39 +35,40 @@
                                     <action selector="didClickGo:" destination="vXZ-lx-hvc" eventType="touchDown" id="jIg-9Q-xUj"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MWC-nY-c2B">
-                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hello" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVK-68-PQY">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="6" width="314" height="30"/>
+                                    <rect key="frame" x="16" y="10" width="319" height="21"/>
                                 </variation>
-                            </textField>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="Qre-PV-j9G"/>
+                                <exclude reference="EpG-e2-Oaz"/>
                                 <exclude reference="kAl-5b-i1f"/>
-                                <exclude reference="MWC-nY-c2B"/>
+                                <exclude reference="hVK-68-PQY"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="Qre-PV-j9G"/>
+                                <include reference="EpG-e2-Oaz"/>
                                 <include reference="kAl-5b-i1f"/>
-                                <include reference="MWC-nY-c2B"/>
+                                <include reference="hVK-68-PQY"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="textField" destination="MWC-nY-c2B" id="NsY-kR-6kG"/>
-                        <outlet property="webView" destination="Qre-PV-j9G" id="Ggf-2e-phL"/>
+                        <outlet property="textLabel" destination="hVK-68-PQY" id="zPf-Uc-zv1"/>
+                        <outlet property="webView" destination="EpG-e2-Oaz" id="17n-1k-UH0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="477" y="337.5"/>
+            <point key="canvasLocation" x="375" y="405"/>
         </scene>
     </scenes>
 </document>

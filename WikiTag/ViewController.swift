@@ -10,11 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet var textField:UITextField!
-    @IBOutlet var webView:UIWebView!
 
+    @IBOutlet var webView:UIWebView!
+   
+    @IBOutlet var textLabel:UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -25,12 +28,22 @@ class ViewController: UIViewController {
     
     @IBAction func didClickGo(AnyObject) {
         
+        let screenSize: CGRect = UIScreen.mainScreen().bounds
+        webView.bounds = screenSize
+        
         // Random Button for Wikipedia
         var randomURL = "http://en.wikipedia.org/wiki/Special:Random"
         var url = NSURL(string: randomURL)
         var request = NSURLRequest(URL: url!)
+        
+        self.webView.scalesPageToFit = false;
+        
         webView.loadRequest(request)
         
+        textLabel.text = "hello, world"
+    
+        //var text = request.
+        //textField.text = text
     }
 
 }
