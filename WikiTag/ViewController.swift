@@ -3,7 +3,6 @@
 //  WikiTag
 //
 //  Created by James Hotchkiss on 11/26/14.
-// hello
 //  Copyright (c) 2014 James Hotchkiss. All rights reserved.
 //
 
