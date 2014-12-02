@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>270DE764-370D-4F2D-877D-7EBA1978CAA9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WikiTag</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2CDDFB4B1C6098A2AE5F8C591359471BEF61E941</key>
+		<string>https://github.com/jhtch/WikiTag.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WikiTag.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2CDDFB4B1C6098A2AE5F8C591359471BEF61E941</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jhtch/WikiTag.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2CDDFB4B1C6098A2AE5F8C591359471BEF61E941</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2CDDFB4B1C6098A2AE5F8C591359471BEF61E941</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WikiTag</string>
+		</dict>
+	</array>
+</dict>
+</plist>
