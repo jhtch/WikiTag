@@ -13,6 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="V0S-7Q-iJa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nJ6-O4-3A4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgN-lG-4BA">
@@ -47,9 +48,6 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="88" y="307" width="224" height="127"/>
                                 </variation>
-                                <connections>
-                                    <segue destination="UL8-6u-2cb" kind="show" id="5M3-jr-Ndi"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.67924186646991769" green="0.81445761503102332" blue="0.89165088383838387" alpha="1" colorSpace="calibratedRGB"/>
@@ -88,33 +86,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EpG-e2-Oaz">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="phE-mq-XLT">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="-6" width="400" height="806"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                 </variation>
                             </webView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MWC-nY-c2B">
-                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EpG-e2-Oaz">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="77" width="314" height="30"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
                                 </variation>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAl-5b-i1f">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Go">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="338" y="77" width="30" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="didClickGo:" destination="vXZ-lx-hvc" eventType="touchDown" id="jIg-9Q-xUj"/>
-                                </connections>
-                            </button>
+                            </webView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hello" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVK-68-PQY">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -124,31 +110,46 @@
                                     <rect key="frame" x="16" y="10" width="319" height="21"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAl-5b-i1f">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Go">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="336" y="6" width="30" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="didClickGo:" destination="vXZ-lx-hvc" eventType="touchDown" id="jIg-9Q-xUj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="phE-mq-XLT"/>
                                 <exclude reference="EpG-e2-Oaz"/>
-                                <exclude reference="kAl-5b-i1f"/>
                                 <exclude reference="hVK-68-PQY"/>
+                                <exclude reference="kAl-5b-i1f"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
+                                <include reference="phE-mq-XLT"/>
                                 <include reference="EpG-e2-Oaz"/>
-                                <include reference="kAl-5b-i1f"/>
                                 <include reference="hVK-68-PQY"/>
+                                <include reference="kAl-5b-i1f"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="textLabel" destination="hVK-68-PQY" id="zPf-Uc-zv1"/>
                         <outlet property="webView" destination="EpG-e2-Oaz" id="17n-1k-UH0"/>
+                        <outlet property="webViewDummy" destination="phE-mq-XLT" id="JIM-Ud-Dck"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="375" y="405"/>
+            <point key="canvasLocation" x="627" y="770.25"/>
         </scene>
     </scenes>
 </document>
