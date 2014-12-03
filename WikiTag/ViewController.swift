@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
 
     @IBOutlet var webView:UIWebView!
+    @IBOutlet var webViewDummy:UIWebView!
    
     @IBOutlet var textLabel:UILabel!
     
@@ -43,12 +44,14 @@ class ViewController: UIViewController {
         
         // load the webpage
         webView.loadRequest(request)
+        webViewDummy.loadRequest(request)
         
         // get current URL from request
         var curURL = self.webView.request?.URL
+        var destURL = self.webViewDummy.request?.URL
         
         // set the label text to the current URL (which isn't loaded onto page until Go is hit again)
-        textLabel.text = curURL?.absoluteString
+        textLabel.text = destURL?.absoluteString
 
     }
 
