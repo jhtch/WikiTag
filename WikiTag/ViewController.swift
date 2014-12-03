@@ -42,9 +42,14 @@ class ViewController: UIViewController {
         var url = NSURL(string: randomURL)
         var request = NSURLRequest(URL: url!)
         
+        // second random button
+        var secondrandomURL = "http://en.wikipedia.org/wiki/Special:Random"
+        var secondurl = NSURL(string: secondrandomURL)
+        var secondrequest = NSURLRequest(URL: secondurl!)
+        
         // load the webpage
         webView.loadRequest(request)
-        webViewDummy.loadRequest(request)
+        webViewDummy.loadRequest(secondrequest)
         
         // get current URL from request
         var curURL = self.webView.request?.URL
