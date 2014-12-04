@@ -8,10 +8,13 @@
 
 import UIKit
 
-class ViewControllerThree: UIViewController {
+class ViewControllerThree: UIViewController, UIWebViewDelegate{
     
     
+    @IBOutlet var myLabel: UILabel!
     @IBOutlet var currentWebView: UIWebView!
+    var counter = 0.0
+
     
     override func viewDidLoad() {
         
@@ -21,8 +24,7 @@ class ViewControllerThree: UIViewController {
         var url = NSURL(string: randomURL)
         var currentRequest = NSURLRequest(URL: url!)
         currentWebView.loadRequest(currentRequest)
-        // Do any additional setup after loading the view, typically from a nib.
-        
+        currentWebView.delegate = self
         
     }
     
@@ -31,4 +33,18 @@ class ViewControllerThree: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func webViewDidFinishLoad(currentWebView: UIWebView!) {
+        var currentURL = currentWebView.request?.URL.absoluteString
+        counter += 0.5
+        var counterInt:Int = Int(counter)
+        var counterString:String = String(format: "%d", counterInt)
+        myLabel.text = counterString
+        
+    }
+    @IBAction func backPage(sender: AnyObject) {
+        if (currentWebView.canGoBack)
+        {
+            currentWebView.goBack()
+        }
+    }
 }
