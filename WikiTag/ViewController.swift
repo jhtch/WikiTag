@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet var webViewDummy:UIWebView!
    
     @IBOutlet var textLabel:UILabel!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +28,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func didClickGo(AnyObject) {
+    @IBAction func didClickPlay(sender: AnyObject) {
+    }
+    
+    @IBAction func didClickGo(sender: AnyObject) {
         
         //let screenSize: CGRect = UIScreen.mainScreen().bounds
         //webView.bounds = screenSize
@@ -37,7 +41,7 @@ class ViewController: UIViewController {
         self.webView.scalesPageToFit = true;
 
         
-        // Random Button for Wikipedia
+        // randomly generate Wikipedia page
         var randomURL = "http://en.wikipedia.org/wiki/Special:Random"
         var url = NSURL(string: randomURL)
         var request = NSURLRequest(URL: url!)
