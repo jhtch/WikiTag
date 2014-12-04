@@ -27,8 +27,7 @@
                                     <rect key="frame" x="105" y="262" width="191" height="65"/>
                                 </variation>
                                 <connections>
-                                    <action selector="didClickPlay:" destination="FGk-KR-CTN" eventType="touchUpInside" id="2TF-a2-ECV"/>
-                                    <segue destination="cM0-qE-OXK" kind="show" id="XIl-DX-eXX"/>
+                                    <segue destination="cM0-qE-OXK" kind="show" id="bsI-UN-t3K"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WikiTag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opd-QG-9Po" colorLabel="IBBuiltInLabel-Yellow">
@@ -76,12 +75,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y2u-ti-6pO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="253.5" y="-6.75"/>
+            <point key="canvasLocation" x="241.5" y="-14.25"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Two-->
         <scene sceneID="e3I-ys-Tn4">
             <objects>
-                <viewController id="cM0-qE-OXK" sceneMemberID="viewController">
+                <viewController id="cM0-qE-OXK" customClass="ViewControllerTwo" customModule="WikiTag" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="v3H-25-izl"/>
                         <viewControllerLayoutGuide type="bottom" id="ili-T3-4FN"/>
@@ -90,32 +89,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fuv-5P-CO7">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1gF-lr-wxT">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="193" y="416" width="42" height="21"/>
+                                    <rect key="frame" x="0.0" y="33" width="400" height="659"/>
+                                </variation>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination Page" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="376" translatesAutoresizingMaskIntoConstraints="NO" id="4JO-w1-jMM">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="44"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="28" width="400" height="85"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vx8-eu-ke0">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="20"/>
+                                <state key="normal" title="Click to Begin">
+                                    <color key="titleColor" red="0.021077191429999999" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="116" y="82" width="169" height="40"/>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="Fuv-5P-CO7"/>
+                                <exclude reference="1gF-lr-wxT"/>
+                                <exclude reference="4JO-w1-jMM"/>
+                                <exclude reference="Vx8-eu-ke0"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="Fuv-5P-CO7"/>
+                                <include reference="1gF-lr-wxT"/>
+                                <include reference="4JO-w1-jMM"/>
+                                <include reference="Vx8-eu-ke0"/>
                             </mask>
                         </variation>
                     </view>
+                    <toolbarItems/>
+                    <connections>
+                        <outlet property="destinationWebView" destination="1gF-lr-wxT" id="dNi-ZQ-Pif"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e9l-cB-nAa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1090.5" y="0.75"/>
+            <point key="canvasLocation" x="1068" y="-25.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2tR-iP-K5S">
@@ -147,13 +172,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="phE-mq-XLT">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                                </variation>
-                            </webView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVK-68-PQY">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -197,7 +215,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="phE-mq-XLT"/>
                                 <exclude reference="hVK-68-PQY"/>
                                 <exclude reference="kAl-5b-i1f"/>
                                 <exclude reference="qvi-Sr-Nx3"/>
@@ -206,7 +223,6 @@
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="phE-mq-XLT"/>
                                 <include reference="hVK-68-PQY"/>
                                 <include reference="kAl-5b-i1f"/>
                                 <include reference="qvi-Sr-Nx3"/>
@@ -217,7 +233,6 @@
                     <connections>
                         <outlet property="textLabel" destination="hVK-68-PQY" id="zPf-Uc-zv1"/>
                         <outlet property="webView" destination="EpG-e2-Oaz" id="17n-1k-UH0"/>
-                        <outlet property="webViewDummy" destination="phE-mq-XLT" id="JIM-Ud-Dck"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
