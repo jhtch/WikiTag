@@ -14,6 +14,7 @@ class ViewControllerThree: UIViewController {
     @IBOutlet var currentWebView: UIWebView!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         var randomURL = "http://en.wikipedia.org/wiki/Special:Random"
