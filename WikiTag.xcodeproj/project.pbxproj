@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		94CCF49C1A300B120009DF35 /* ViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CCF49B1A300B120009DF35 /* ViewControllerTwo.swift */; };
+		94CCF49E1A30237C0009DF35 /* ViewControllerThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CCF49D1A30237C0009DF35 /* ViewControllerThree.swift */; };
 		C4D9C8C81A26991100AD87E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D9C8C71A26991100AD87E1 /* AppDelegate.swift */; };
 		C4D9C8CA1A26991100AD87E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D9C8C91A26991100AD87E1 /* ViewController.swift */; };
 		C4D9C8CD1A26991100AD87E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4D9C8CB1A26991100AD87E1 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		94CCF49B1A300B120009DF35 /* ViewControllerTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTwo.swift; sourceTree = "<group>"; };
+		94CCF49D1A30237C0009DF35 /* ViewControllerThree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerThree.swift; sourceTree = "<group>"; };
 		C4D9C8C21A26991100AD87E1 /* WikiTag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikiTag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D9C8C61A26991100AD87E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4D9C8C71A26991100AD87E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				C4D9C8C91A26991100AD87E1 /* ViewController.swift */,
 				94CCF49B1A300B120009DF35 /* ViewControllerTwo.swift */,
 				C4D9C8CB1A26991100AD87E1 /* Main.storyboard */,
+				94CCF49D1A30237C0009DF35 /* ViewControllerThree.swift */,
 				C4D9C8CE1A26991100AD87E1 /* Images.xcassets */,
 				C4D9C8D01A26991100AD87E1 /* LaunchScreen.xib */,
 				C4D9C8C51A26991100AD87E1 /* Supporting Files */,
@@ -218,6 +221,7 @@
 				C4D9C8CA1A26991100AD87E1 /* ViewController.swift in Sources */,
 				C4D9C8C81A26991100AD87E1 /* AppDelegate.swift in Sources */,
 				94CCF49C1A300B120009DF35 /* ViewControllerTwo.swift in Sources */,
+				94CCF49E1A30237C0009DF35 /* ViewControllerThree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

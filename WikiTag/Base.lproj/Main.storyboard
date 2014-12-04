@@ -48,9 +48,6 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="88" y="370" width="224" height="60"/>
                                 </variation>
-                                <connections>
-                                    <segue destination="En7-Wh-Ahg" kind="show" id="f4l-YF-i4G"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.67924186646991769" green="0.81445761503102332" blue="0.89165088383838387" alpha="1" colorSpace="calibratedRGB"/>
@@ -93,7 +90,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="33" width="400" height="659"/>
+                                    <rect key="frame" x="0.0" y="33" width="400" height="723"/>
                                 </variation>
                             </webView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination Page" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="376" translatesAutoresizingMaskIntoConstraints="NO" id="4JO-w1-jMM">
@@ -115,6 +112,9 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="116" y="82" width="169" height="40"/>
                                 </variation>
+                                <connections>
+                                    <segue destination="ivb-9d-51v" kind="show" id="nnY-hx-cGJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -142,102 +142,56 @@
             </objects>
             <point key="canvasLocation" x="1068" y="-25.5"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="2tR-iP-K5S">
+        <!--View Controller Three-->
+        <scene sceneID="cVy-QJ-FMc">
             <objects>
-                <viewController id="En7-Wh-Ahg" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y0h-gF-IDf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="ivb-9d-51v" customClass="ViewControllerThree" customModule="WikiTag" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="NA9-sQ-guJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="L5K-vd-hTl"/>
+                        <viewControllerLayoutGuide type="top" id="WRY-fo-l3L"/>
+                        <viewControllerLayoutGuide type="bottom" id="na2-rp-dwm"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ywv-X2-amS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="aFt-WM-GzQ">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aWe-6G-N89" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="253.5" y="717.75"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
-            <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="WikiTag" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVK-68-PQY">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="46" width="400" height="49"/>
-                                </variation>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAl-5b-i1f">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Go">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="185" y="182" width="30" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="didClickGo:" destination="vXZ-lx-hvc" eventType="touchDown" id="jIg-9Q-xUj"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your destination is:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvi-Sr-Nx3">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="50"/>
-                                </variation>
-                            </label>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EpG-e2-Oaz">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vxF-t7-P4w">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                    <rect key="frame" x="0.0" y="33" width="400" height="723"/>
                                 </variation>
                             </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reach the Destination!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LiR-PF-0Zd">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="33"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="28" width="400" height="85"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="hVK-68-PQY"/>
-                                <exclude reference="kAl-5b-i1f"/>
-                                <exclude reference="qvi-Sr-Nx3"/>
-                                <exclude reference="EpG-e2-Oaz"/>
+                                <exclude reference="vxF-t7-P4w"/>
+                                <exclude reference="LiR-PF-0Zd"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="hVK-68-PQY"/>
-                                <include reference="kAl-5b-i1f"/>
-                                <include reference="qvi-Sr-Nx3"/>
-                                <include reference="EpG-e2-Oaz"/>
+                                <include reference="vxF-t7-P4w"/>
+                                <include reference="LiR-PF-0Zd"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="textLabel" destination="hVK-68-PQY" id="zPf-Uc-zv1"/>
-                        <outlet property="webView" destination="EpG-e2-Oaz" id="17n-1k-UH0"/>
+                        <outlet property="currentWebView" destination="vxF-t7-P4w" id="0wD-WJ-5tz"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1258.5" y="810"/>
+            <point key="canvasLocation" x="1936.5" y="-25.5"/>
         </scene>
     </scenes>
 </document>
