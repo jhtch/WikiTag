@@ -13,8 +13,6 @@ class ViewControllerTwo: UIViewController {
     
     @IBOutlet var destinationWebView: UIWebView!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
