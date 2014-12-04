@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FGk-KR-CTN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FGk-KR-CTN">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -122,6 +122,11 @@
                                     <action selector="didClickGo:" destination="vXZ-lx-hvc" eventType="touchDown" id="jIg-9Q-xUj"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AG9-fL-LAV">
+                                <rect key="frame" x="275" y="69" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -142,6 +147,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="Counter" destination="AG9-fL-LAV" id="jVH-ff-4Hs"/>
                         <outlet property="textLabel" destination="hVK-68-PQY" id="zPf-Uc-zv1"/>
                         <outlet property="webView" destination="EpG-e2-Oaz" id="17n-1k-UH0"/>
                         <outlet property="webViewDummy" destination="phE-mq-XLT" id="JIM-Ud-Dck"/>
