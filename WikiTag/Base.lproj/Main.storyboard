@@ -139,6 +139,31 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrZ-uX-2gt">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="WOj-gc-thl"/>
+                                    <constraint firstAttribute="height" constant="30" id="heK-XH-fPq"/>
+                                </constraints>
+                                <state key="normal" title="New Page?">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="WOj-gc-thl"/>
+                                        <exclude reference="heK-XH-fPq"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="WOj-gc-thl"/>
+                                        <include reference="heK-XH-fPq"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="didClickNewPage:" destination="cM0-qE-OXK" eventType="touchUpInside" id="3CW-z7-Je0"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vx8-eu-ke0">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <constraints>
@@ -163,7 +188,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="ivb-9d-51v" kind="show" id="nnY-hx-cGJ"/>
+                                    <segue destination="ivb-9d-51v" kind="show" identifier="segueOne" id="nnY-hx-cGJ"/>
                                 </connections>
                             </button>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1gF-lr-wxT">
@@ -176,9 +201,11 @@
                             <constraint firstItem="1gF-lr-wxT" firstAttribute="top" secondItem="v3H-25-izl" secondAttribute="bottom" constant="106" id="CHU-xx-iBp"/>
                             <constraint firstItem="4JO-w1-jMM" firstAttribute="width" secondItem="NEE-Pn-2YK" secondAttribute="width" id="HN6-M7-ylH"/>
                             <constraint firstAttribute="centerX" secondItem="1gF-lr-wxT" secondAttribute="centerX" id="Y1G-bG-oKp"/>
+                            <constraint firstItem="nrZ-uX-2gt" firstAttribute="top" secondItem="v3H-25-izl" secondAttribute="bottom" constant="67" id="ZWp-mK-kte"/>
                             <constraint firstItem="4JO-w1-jMM" firstAttribute="centerX" secondItem="Vx8-eu-ke0" secondAttribute="centerX" constant="-0.5" id="dHd-13-kwu"/>
                             <constraint firstAttribute="centerX" secondItem="4JO-w1-jMM" secondAttribute="centerX" id="e0g-Vt-QDY"/>
                             <constraint firstItem="Vx8-eu-ke0" firstAttribute="top" secondItem="v3H-25-izl" secondAttribute="bottom" constant="62" id="hNo-l4-GPt"/>
+                            <constraint firstItem="Vx8-eu-ke0" firstAttribute="leading" secondItem="nrZ-uX-2gt" secondAttribute="trailing" constant="21" id="isY-XL-KFA"/>
                             <constraint firstItem="4JO-w1-jMM" firstAttribute="top" secondItem="v3H-25-izl" secondAttribute="bottom" constant="8" id="rsD-bz-NJJ"/>
                             <constraint firstItem="1gF-lr-wxT" firstAttribute="height" secondItem="NEE-Pn-2YK" secondAttribute="height" id="sKh-zx-hPC"/>
                             <constraint firstItem="1gF-lr-wxT" firstAttribute="width" secondItem="NEE-Pn-2YK" secondAttribute="width" id="xGu-0M-mdE"/>
@@ -186,6 +213,7 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="4JO-w1-jMM"/>
+                                <exclude reference="nrZ-uX-2gt"/>
                                 <exclude reference="Vx8-eu-ke0"/>
                                 <exclude reference="1gF-lr-wxT"/>
                             </mask>
@@ -194,16 +222,19 @@
                                 <exclude reference="dHd-13-kwu"/>
                                 <exclude reference="e0g-Vt-QDY"/>
                                 <exclude reference="rsD-bz-NJJ"/>
-                                <exclude reference="hNo-l4-GPt"/>
+                                <exclude reference="ZWp-mK-kte"/>
                                 <exclude reference="CHU-xx-iBp"/>
                                 <exclude reference="Y1G-bG-oKp"/>
                                 <exclude reference="sKh-zx-hPC"/>
                                 <exclude reference="xGu-0M-mdE"/>
+                                <exclude reference="hNo-l4-GPt"/>
+                                <exclude reference="isY-XL-KFA"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="4JO-w1-jMM"/>
+                                <include reference="nrZ-uX-2gt"/>
                                 <include reference="Vx8-eu-ke0"/>
                                 <include reference="1gF-lr-wxT"/>
                             </mask>
@@ -212,17 +243,20 @@
                                 <include reference="dHd-13-kwu"/>
                                 <include reference="e0g-Vt-QDY"/>
                                 <include reference="rsD-bz-NJJ"/>
-                                <include reference="hNo-l4-GPt"/>
+                                <include reference="ZWp-mK-kte"/>
                                 <include reference="CHU-xx-iBp"/>
                                 <include reference="Y1G-bG-oKp"/>
                                 <include reference="sKh-zx-hPC"/>
                                 <include reference="xGu-0M-mdE"/>
+                                <include reference="hNo-l4-GPt"/>
+                                <include reference="isY-XL-KFA"/>
                             </mask>
                         </variation>
                     </view>
                     <toolbarItems/>
                     <connections>
                         <outlet property="destinationWebView" destination="1gF-lr-wxT" id="dNi-ZQ-Pif"/>
+                        <outlet property="newPage" destination="nrZ-uX-2gt" id="8lJ-da-JNX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e9l-cB-nAa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -390,6 +424,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sfc-DI-4KS"/>
+        <segue reference="bsI-UN-t3K"/>
     </inferredMetricsTieBreakers>
 </document>

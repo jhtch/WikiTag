@@ -13,7 +13,8 @@ class ViewControllerThree: UIViewController, UIWebViewDelegate{
     @IBOutlet var myLabel: UILabel!
     @IBOutlet var currentWebView: UIWebView!
     var counter = 0.0
-
+    
+    var toPass: NSURL!
     
     override func viewDidLoad() {
         
