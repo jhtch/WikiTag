@@ -20,7 +20,7 @@ class ViewControllerTwo: UIViewController, UIWebViewDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        var randomURL = "http://en.wikipedia.org/wiki/United_States"
+        var randomURL = "http://en.wikipedia.org/wiki/Special:Random"
         var url = NSURL(string: randomURL)
         var destinationRequest = NSURLRequest(URL: url!)
         destinationWebView.loadRequest(destinationRequest)
@@ -42,6 +42,14 @@ class ViewControllerTwo: UIViewController, UIWebViewDelegate {
         var destinationRequest = NSURLRequest(URL: url!)
         destinationWebView.loadRequest(destinationRequest)
 
+    }
+    
+    @IBAction func didClickJesus(sender: AnyObject) {
+        
+        var jesusURL = "http://en.wikipedia.org/wiki/Jesus"
+        var url = NSURL(string: jesusURL)
+        var destinationRequest = NSURLRequest(URL: url!)
+        destinationWebView.loadRequest(destinationRequest)
     }
     
     func webViewDidFinishLoad(destinationWebView: UIWebView!) {
