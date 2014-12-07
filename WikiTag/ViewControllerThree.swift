@@ -12,6 +12,8 @@ class ViewControllerThree: UIViewController, UIWebViewDelegate {
 
     @IBOutlet var myLabel: UILabel!
     @IBOutlet var currentWebView: UIWebView!
+    
+    // initialize the counter
     var counter = 0.0
     
     @IBOutlet var pageLabel: UILabel!
@@ -23,12 +25,14 @@ class ViewControllerThree: UIViewController, UIWebViewDelegate {
         
         super.viewDidLoad()
         
+        // load a random wikipedia page
         var randomURL = "http://en.wikipedia.org/wiki/Special:Random"
         var url = NSURL(string: randomURL)
         var currentRequest = NSURLRequest(URL: url!)
         currentWebView.loadRequest(currentRequest)
         currentWebView.delegate = self
         
+        // take the title of the wiki page and convert to plain text
         var endStr = toPass.lastPathComponent
         pageLabel.text = endStr!.stringByReplacingOccurrencesOfString("_", withString: " ",options: NSStringCompareOptions.LiteralSearch,range: nil)
 
@@ -39,6 +43,7 @@ class ViewControllerThree: UIViewController, UIWebViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    // increment counter and check if the destination has been reached
     func webViewDidFinishLoad(currentWebView: UIWebView!) {
         var currentURL = currentWebView.request?.URL.absoluteString
         counter += 0.5
@@ -58,6 +63,7 @@ class ViewControllerThree: UIViewController, UIWebViewDelegate {
         
     }
     
+    // implement back button
     @IBAction func backPage(sender: AnyObject) {
         if (currentWebView.canGoBack)
         {
@@ -65,6 +71,8 @@ class ViewControllerThree: UIViewController, UIWebViewDelegate {
         }
     }
     
+    
+    // pass values and segue
     override func prepareForSegue(segue: (UIStoryboardSegue!), sender: AnyObject!) {
         if (segue.identifier == "segueTwo") {
             let theDestination = (segue.destinationViewController as ViewControllerFour)

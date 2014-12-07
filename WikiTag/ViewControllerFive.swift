@@ -10,6 +10,7 @@ import UIKit
 
 class ViewControllerFive: UIViewController {
     
+    // make a bunch of labels in the worst possible way
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var label2: UILabel!
     @IBOutlet weak var label3: UILabel!
@@ -28,12 +29,13 @@ class ViewControllerFive: UIViewController {
     @IBOutlet weak var label16: UILabel!
     
     
+    // create an array that will give better access to database contents
     var dataParse:NSMutableArray = NSMutableArray()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        // query the contents of the database and load into array
         var query = PFQuery(className: "RecentScores")
         query.orderByDescending("createdAt")
         query.findObjectsInBackgroundWithBlock {
@@ -44,6 +46,7 @@ class ViewControllerFive: UIViewController {
                 self.dataParse.addObject(object)
             }
             
+            // make a ton of labels
             self.label1.text = self.dataParse[0].valueForKey("startPage") as? String
             self.label5.text = self.dataParse[1].valueForKey("startPage") as? String
             self.label9.text = self.dataParse[2].valueForKey("startPage") as? String

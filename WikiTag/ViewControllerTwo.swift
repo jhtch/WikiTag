@@ -21,11 +21,11 @@ class ViewControllerTwo: UIViewController, UIWebViewDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        // generate and load a random wikipedia page
         var randomURL = "http://en.wikipedia.org/wiki/Special:Random"
         var url = NSURL(string: randomURL)
         var destinationRequest = NSURLRequest(URL: url!)
         destinationWebView.loadRequest(destinationRequest)
-        
         destinationWebView.delegate = self
         
     }
@@ -36,7 +36,8 @@ class ViewControllerTwo: UIViewController, UIWebViewDelegate {
     }
     
    @IBAction func didClickNewPage(sender: AnyObject) {
-        
+    
+        // generate and load a random wikipedia page
         var randomURL = "http://en.wikipedia.org/wiki/Special:Random"
         var url = NSURL(string: randomURL)
         var destinationRequest = NSURLRequest(URL: url!)
@@ -47,6 +48,7 @@ class ViewControllerTwo: UIViewController, UIWebViewDelegate {
     
     @IBAction func didClickJesus(sender: AnyObject) {
         
+        // generate and load the jesus page
         var jesusURL = "http://en.wikipedia.org/wiki/Jesus"
         var url = NSURL(string: jesusURL)
         var destinationRequest = NSURLRequest(URL: url!)
@@ -56,10 +58,12 @@ class ViewControllerTwo: UIViewController, UIWebViewDelegate {
     
     func webViewDidFinishLoad(destinationWebView: UIWebView!) {
         
+        // pass the url
         var curURL = self.destinationWebView.request?.URL
         urlPass = curURL
     }
     
+    // pass the destination
     override func prepareForSegue(segue: (UIStoryboardSegue!), sender: AnyObject!) {
         if (segue.identifier == "segueOne") {
             

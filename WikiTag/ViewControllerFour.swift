@@ -27,6 +27,7 @@ class ViewControllerFour:UIViewController  {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        // fix fencepost problem and print the counter
         var counterInt:Int = Int(finalCounter) + 1
         var counterString:String = String(format: "%d", counterInt)
         counterLabel.text = counterString
@@ -35,20 +36,24 @@ class ViewControllerFour:UIViewController  {
         
         var gameScore = PFObject(className: "GameScore")
         
+        // convert origin to plain text
         var startStr = startPageURL.lastPathComponent
         startURL = startStr!.stringByReplacingOccurrencesOfString("_", withString: " ",options: NSStringCompareOptions.LiteralSearch,range: nil)
         
+        // convert end to plain text
         var endStr = endPageURL.lastPathComponent
         lastURL = endStr!.stringByReplacingOccurrencesOfString("_", withString: " ",options: NSStringCompareOptions.LiteralSearch,range: nil)
         
     }
     
+    // if the user doesn't submit initials, call them anon
     @IBAction func submitScore(sender: AnyObject) {
         var initialsText = initials.text
         if (initialsText == "")
         {
             initialsText = "anon"
         }
+        // load into parse database
         var object = PFObject(className: "RecentScores")
         object.setObject(startURL, forKey: "startPage")
         object.setObject(lastURL, forKey: "endPage")
