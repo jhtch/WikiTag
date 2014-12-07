@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class ViewControllerTwo: UIViewController, UIWebViewDelegate {
 
@@ -50,11 +51,16 @@ class ViewControllerTwo: UIViewController, UIWebViewDelegate {
         var url = NSURL(string: jesusURL)
         var destinationRequest = NSURLRequest(URL: url!)
         destinationWebView.loadRequest(destinationRequest)
-    }
+        
     
+        var info = NSData(contentsOfURL: url!, options: nil, error: nil)
+        var parser = HTMLParser(html: info)
+        var queryTitle = "//title"
+        var nodetitle:[TFHppleElement] = parser.searchWithXPathQuery(queryTitle)as [TFHppleElement]}
+    Source: http://stackoverflow.com/questions/24817164/how-to-ensure-all-elements-of-a-page-have-completed-loading-when-scraping-a-webs
     func webViewDidFinishLoad(destinationWebView: UIWebView!) {
         
-        var curURL = self.destinationWebView.request?.URL
+        var curURL = self.destinationebView.request?.URL
         urlPass = curURL
     }
     
