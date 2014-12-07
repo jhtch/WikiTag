@@ -8,15 +8,19 @@
 
 import UIKit
 
-class ViewControllerFour: UIViewController {
+class ViewControllerFour:UIViewController  {
     
     @IBOutlet var counterLabel: UILabel!
-    var finalCounter:Double!
-    
     @IBOutlet var initials: UITextField!
     
-    var first = "Korea"
-    var second = "China"
+    var finalCounter:Double!
+    var tempStr:String!
+    
+    var startPageURL:NSURL!
+    var endPageURL:NSURL!
+    
+    var startURL:String!
+    var lastURL:String!
     
     
     override func viewDidLoad() {
@@ -27,16 +31,24 @@ class ViewControllerFour: UIViewController {
         var counterString:String = String(format: "%d", counterInt)
         counterLabel.text = counterString
         
+        tempStr = counterString
+        
         var gameScore = PFObject(className: "GameScore")
+        
+        var startStr = startPageURL.lastPathComponent
+        startURL = startStr!.stringByReplacingOccurrencesOfString("_", withString: " ",options: NSStringCompareOptions.LiteralSearch,range: nil)
+        
+        var endStr = endPageURL.lastPathComponent
+        lastURL = endStr!.stringByReplacingOccurrencesOfString("_", withString: " ",options: NSStringCompareOptions.LiteralSearch,range: nil)
         
     }
     
     @IBAction func submitScore(sender: AnyObject) {
         var initialsText = initials.text
         var object = PFObject(className: "RecentScores")
-        object.setObject("China", forKey: "startPage")
-        object.setObject("Korea", forKey: "endPage")
-        object.setObject(Int(finalCounter) + 1, forKey: "jumps")
+        object.setObject(startURL, forKey: "startPage")
+        object.setObject(lastURL, forKey: "endPage")
+        object.setObject(tempStr, forKey: "jumps")
         object.setObject(initialsText, forKey: "initials")
         object.saveInBackground()
     }

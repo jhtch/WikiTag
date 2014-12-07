@@ -15,6 +15,7 @@ class ViewControllerTwo: UIViewController, UIWebViewDelegate {
     @IBOutlet weak var newPage: UIButton!
     
     var urlPass: NSURL!
+    var destinationPass: NSURLRequest!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,6 @@ class ViewControllerTwo: UIViewController, UIWebViewDelegate {
         destinationWebView.loadRequest(destinationRequest)
         
         destinationWebView.delegate = self
-        
         
     }
     
@@ -41,6 +41,7 @@ class ViewControllerTwo: UIViewController, UIWebViewDelegate {
         var url = NSURL(string: randomURL)
         var destinationRequest = NSURLRequest(URL: url!)
         destinationWebView.loadRequest(destinationRequest)
+        destinationPass = destinationRequest
 
     }
     
@@ -50,6 +51,7 @@ class ViewControllerTwo: UIViewController, UIWebViewDelegate {
         var url = NSURL(string: jesusURL)
         var destinationRequest = NSURLRequest(URL: url!)
         destinationWebView.loadRequest(destinationRequest)
+        destinationPass = destinationRequest
     }
     
     func webViewDidFinishLoad(destinationWebView: UIWebView!) {
@@ -63,7 +65,6 @@ class ViewControllerTwo: UIViewController, UIWebViewDelegate {
             
             let theDestination = (segue.destinationViewController as ViewControllerThree)
             theDestination.toPass = urlPass
-            
         }
     }
 }

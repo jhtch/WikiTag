@@ -15,17 +15,21 @@ class ViewControllerThree: UIViewController, UIWebViewDelegate {
     var counter = 0.0
     
     var toPass: NSURL!
+    var toPassTwo: NSURL!
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
-        var randomURL = "http://en.wikipedia.org/wiki/Christianity"
+        var randomURL = "http://en.wikipedia.org/wiki/Special:Random"
         var url = NSURL(string: randomURL)
         var currentRequest = NSURLRequest(URL: url!)
         currentWebView.loadRequest(currentRequest)
         currentWebView.delegate = self
         
+        var curURL = self.currentWebView.request?.URL
+        toPassTwo = curURL
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -45,6 +49,7 @@ class ViewControllerThree: UIViewController, UIWebViewDelegate {
         {
             self.performSegueWithIdentifier("segueTwo", sender: self)
         }
+        
     }
     
     @IBAction func backPage(sender: AnyObject) {
@@ -58,6 +63,9 @@ class ViewControllerThree: UIViewController, UIWebViewDelegate {
         if (segue.identifier == "segueTwo") {
             let theDestination = (segue.destinationViewController as ViewControllerFour)
             theDestination.finalCounter = counter
+            
+            theDestination.startPageURL = toPassTwo
+            theDestination.endPageURL = toPass
         }
     }
 }
