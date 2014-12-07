@@ -15,6 +15,9 @@ class ViewControllerFour: UIViewController {
     
     @IBOutlet var initials: UITextField!
     
+    var first = "Korea"
+    var second = "China"
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,10 +34,10 @@ class ViewControllerFour: UIViewController {
     @IBAction func submitScore(sender: AnyObject) {
         var initialsText = initials.text
         var object = PFObject(className: "RecentScores")
-        object.addObject("Jump1", forKey: "startPage")
-        object.addObject("Jump2", forKey: "endPage")
-        object.addObject(Int(finalCounter) + 1, forKey: "jumps")
-        object.addObject(initialsText, forKey: "initials")
+        object.setObject("China", forKey: "startPage")
+        object.setObject("Korea", forKey: "endPage")
+        object.setObject(Int(finalCounter) + 1, forKey: "jumps")
+        object.setObject(initialsText, forKey: "initials")
         object.saveInBackground()
     }
     override func didReceiveMemoryWarning() {

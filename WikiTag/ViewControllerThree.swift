@@ -20,7 +20,7 @@ class ViewControllerThree: UIViewController, UIWebViewDelegate {
         
         super.viewDidLoad()
         
-        var randomURL = "http://en.wikipedia.org/wiki/Special:Random"
+        var randomURL = "http://en.wikipedia.org/wiki/Christianity"
         var url = NSURL(string: randomURL)
         var currentRequest = NSURLRequest(URL: url!)
         currentWebView.loadRequest(currentRequest)
