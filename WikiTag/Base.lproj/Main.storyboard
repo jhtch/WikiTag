@@ -122,9 +122,6 @@
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1gF-lr-wxT">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="28" width="400" height="600"/>
-                                </variation>
                             </webView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="376" translatesAutoresizingMaskIntoConstraints="NO" id="4JO-w1-jMM">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
@@ -165,8 +162,7 @@
                                         <exclude reference="sEi-qE-VWK"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="216" y="82" width="169" height="40"/>
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="SkR-Al-e3a"/>
                                         <include reference="sEi-qE-VWK"/>
@@ -174,32 +170,6 @@
                                 </variation>
                                 <connections>
                                     <segue destination="ivb-9d-51v" kind="show" identifier="segueOne" id="95H-FF-pCl"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rv0-ef-4do">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="44" id="pbG-Lp-eFi"/>
-                                    <constraint firstAttribute="height" constant="30" id="uoP-oa-FAe"/>
-                                </constraints>
-                                <state key="normal" title="Jesus!">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="pbG-Lp-eFi"/>
-                                        <exclude reference="uoP-oa-FAe"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="406" y="87" width="44" height="30"/>
-                                    <mask key="constraints">
-                                        <include reference="pbG-Lp-eFi"/>
-                                        <include reference="uoP-oa-FAe"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="didClickJesus:" destination="cM0-qE-OXK" eventType="touchUpInside" id="4eA-SW-yrS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrZ-uX-2gt">
@@ -227,30 +197,55 @@
                                     <action selector="didClickNewPage:" destination="cM0-qE-OXK" eventType="touchUpInside" id="3CW-z7-Je0"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rv0-ef-4do">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="pbG-Lp-eFi"/>
+                                    <constraint firstAttribute="height" constant="30" id="uoP-oa-FAe"/>
+                                </constraints>
+                                <state key="normal" title="Jesus!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="pbG-Lp-eFi"/>
+                                        <exclude reference="uoP-oa-FAe"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="pbG-Lp-eFi"/>
+                                        <include reference="uoP-oa-FAe"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="didClickJesus:" destination="cM0-qE-OXK" eventType="touchUpInside" id="4eA-SW-yrS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="1gF-lr-wxT" secondAttribute="width" id="7re-Gp-Unw"/>
-                            <constraint firstItem="nrZ-uX-2gt" firstAttribute="leading" secondItem="NEE-Pn-2YK" secondAttribute="leadingMargin" id="Cvl-hC-nXv"/>
                             <constraint firstAttribute="centerX" secondItem="1gF-lr-wxT" secondAttribute="centerX" id="Y1G-bG-oKp"/>
                             <constraint firstItem="nrZ-uX-2gt" firstAttribute="top" secondItem="v3H-25-izl" secondAttribute="bottom" constant="67" id="ZWp-mK-kte"/>
                             <constraint firstItem="4JO-w1-jMM" firstAttribute="centerX" secondItem="Vx8-eu-ke0" secondAttribute="centerX" constant="-0.5" id="dHd-13-kwu"/>
                             <constraint firstAttribute="centerX" secondItem="4JO-w1-jMM" secondAttribute="centerX" id="e0g-Vt-QDY"/>
                             <constraint firstItem="1gF-lr-wxT" firstAttribute="top" secondItem="v3H-25-izl" secondAttribute="bottom" constant="8" id="eDu-LJ-d63"/>
                             <constraint firstItem="Vx8-eu-ke0" firstAttribute="top" secondItem="v3H-25-izl" secondAttribute="bottom" constant="62" id="hNo-l4-GPt"/>
-                            <constraint firstItem="Rv0-ef-4do" firstAttribute="leading" secondItem="Vx8-eu-ke0" secondAttribute="trailing" constant="21" id="kN8-KY-rHc"/>
                             <constraint firstItem="Rv0-ef-4do" firstAttribute="top" secondItem="v3H-25-izl" secondAttribute="bottom" constant="67" id="qEs-Hi-fgS"/>
                             <constraint firstItem="4JO-w1-jMM" firstAttribute="top" secondItem="v3H-25-izl" secondAttribute="bottom" constant="8" id="rsD-bz-NJJ"/>
                             <constraint firstItem="1gF-lr-wxT" firstAttribute="height" secondItem="NEE-Pn-2YK" secondAttribute="height" id="sKh-zx-hPC"/>
+                            <constraint firstItem="Rv0-ef-4do" firstAttribute="leading" secondItem="Vx8-eu-ke0" secondAttribute="trailing" constant="3" id="sXv-ur-xoB"/>
                             <constraint firstItem="1gF-lr-wxT" firstAttribute="width" secondItem="NEE-Pn-2YK" secondAttribute="width" id="xGu-0M-mdE"/>
+                            <constraint firstItem="Vx8-eu-ke0" firstAttribute="leading" secondItem="nrZ-uX-2gt" secondAttribute="trailing" constant="3" id="zGB-7X-Ug2"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="1gF-lr-wxT"/>
                                 <exclude reference="4JO-w1-jMM"/>
                                 <exclude reference="Vx8-eu-ke0"/>
-                                <exclude reference="Rv0-ef-4do"/>
                                 <exclude reference="nrZ-uX-2gt"/>
+                                <exclude reference="Rv0-ef-4do"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="7re-Gp-Unw"/>
@@ -261,11 +256,11 @@
                                 <exclude reference="dHd-13-kwu"/>
                                 <exclude reference="e0g-Vt-QDY"/>
                                 <exclude reference="rsD-bz-NJJ"/>
-                                <exclude reference="Cvl-hC-nXv"/>
                                 <exclude reference="ZWp-mK-kte"/>
                                 <exclude reference="hNo-l4-GPt"/>
-                                <exclude reference="kN8-KY-rHc"/>
+                                <exclude reference="zGB-7X-Ug2"/>
                                 <exclude reference="qEs-Hi-fgS"/>
+                                <exclude reference="sXv-ur-xoB"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -273,8 +268,8 @@
                                 <include reference="1gF-lr-wxT"/>
                                 <include reference="4JO-w1-jMM"/>
                                 <include reference="Vx8-eu-ke0"/>
-                                <include reference="Rv0-ef-4do"/>
                                 <include reference="nrZ-uX-2gt"/>
+                                <include reference="Rv0-ef-4do"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="7re-Gp-Unw"/>
@@ -285,11 +280,11 @@
                                 <include reference="dHd-13-kwu"/>
                                 <include reference="e0g-Vt-QDY"/>
                                 <include reference="rsD-bz-NJJ"/>
-                                <include reference="Cvl-hC-nXv"/>
                                 <include reference="ZWp-mK-kte"/>
                                 <include reference="hNo-l4-GPt"/>
-                                <include reference="kN8-KY-rHc"/>
+                                <include reference="zGB-7X-Ug2"/>
                                 <include reference="qEs-Hi-fgS"/>
+                                <include reference="sXv-ur-xoB"/>
                             </mask>
                         </variation>
                     </view>
@@ -595,6 +590,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="submitScore:" destination="iSa-ld-m0P" eventType="touchUpInside" id="avL-KK-ZrM"/>
+                                    <segue destination="FGk-KR-CTN" kind="show" id="k7m-7W-DzY"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Initials" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Au4-vC-WJ6">
@@ -725,6 +721,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="DdD-4u-Vdo"/>
+        <segue reference="bsI-UN-t3K"/>
+        <segue reference="k7m-7W-DzY"/>
     </inferredMetricsTieBreakers>
 </document>
