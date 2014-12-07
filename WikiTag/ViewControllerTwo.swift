@@ -8,25 +8,25 @@
 
 import UIKit
 
-class ViewControllerTwo: UIViewController {
-    
-    
+class ViewControllerTwo: UIViewController, UIWebViewDelegate {
+
     @IBOutlet var destinationWebView: UIWebView!
     
     @IBOutlet weak var newPage: UIButton!
     
-    var urlString = NSURL(string: "http://google.com")
+    var urlPass: NSURL!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        var randomURL = "http://en.wikipedia.org/wiki/Special:Random"
+        var randomURL = "http://en.wikipedia.org/wiki/United_States"
         var url = NSURL(string: randomURL)
         var destinationRequest = NSURLRequest(URL: url!)
         destinationWebView.loadRequest(destinationRequest)
         
-        urlString = url;
+        destinationWebView.delegate = self
+        
         
     }
     
@@ -41,16 +41,20 @@ class ViewControllerTwo: UIViewController {
         var url = NSURL(string: randomURL)
         var destinationRequest = NSURLRequest(URL: url!)
         destinationWebView.loadRequest(destinationRequest)
-    
-        urlString = url;
+
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+    func webViewDidFinishLoad(destinationWebView: UIWebView!) {
+        
+        var curURL = self.destinationWebView.request?.URL
+        urlPass = curURL
+    }
+    
+    override func prepareForSegue(segue: (UIStoryboardSegue!), sender: AnyObject!) {
         if (segue.identifier == "segueOne") {
             
-            var svc = segue!.destinationViewController as ViewControllerThree;
-            
-            svc.toPass = urlString;
+            let theDestination = (segue.destinationViewController as ViewControllerThree)
+            theDestination.toPass = urlPass
             
         }
     }

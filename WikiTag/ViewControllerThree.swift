@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ViewControllerThree: UIViewController, UIWebViewDelegate{
-    
+class ViewControllerThree: UIViewController, UIWebViewDelegate {
+
     @IBOutlet var myLabel: UILabel!
     @IBOutlet var currentWebView: UIWebView!
     var counter = 0.0
@@ -40,11 +40,24 @@ class ViewControllerThree: UIViewController, UIWebViewDelegate{
         var counterString:String = String(format: "%d", counterInt)
         myLabel.text = counterString
         
+        var curURL = self.currentWebView.request?.URL
+        if (curURL == toPass)
+        {
+            self.performSegueWithIdentifier("segueTwo", sender: self)
+        }
     }
+    
     @IBAction func backPage(sender: AnyObject) {
         if (currentWebView.canGoBack)
         {
             currentWebView.goBack()
+        }
+    }
+    
+    override func prepareForSegue(segue: (UIStoryboardSegue!), sender: AnyObject!) {
+        if (segue.identifier == "segueTwo") {
+            let theDestination = (segue.destinationViewController as ViewControllerFour)
+            theDestination.finalCounter = counter
         }
     }
 }

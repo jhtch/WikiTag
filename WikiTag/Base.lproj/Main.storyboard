@@ -103,7 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y2u-ti-6pO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="241.5" y="-14.25"/>
+            <point key="canvasLocation" x="1210.5" y="-3"/>
         </scene>
         <!--View Controller Two-->
         <scene sceneID="e3I-ys-Tn4">
@@ -188,7 +188,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="ivb-9d-51v" kind="show" identifier="segueOne" id="nnY-hx-cGJ"/>
+                                    <segue destination="ivb-9d-51v" kind="show" identifier="segueOne" id="95H-FF-pCl"/>
                                 </connections>
                             </button>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1gF-lr-wxT">
@@ -222,13 +222,13 @@
                                 <exclude reference="dHd-13-kwu"/>
                                 <exclude reference="e0g-Vt-QDY"/>
                                 <exclude reference="rsD-bz-NJJ"/>
+                                <exclude reference="hNo-l4-GPt"/>
+                                <exclude reference="isY-XL-KFA"/>
                                 <exclude reference="ZWp-mK-kte"/>
                                 <exclude reference="CHU-xx-iBp"/>
                                 <exclude reference="Y1G-bG-oKp"/>
                                 <exclude reference="sKh-zx-hPC"/>
                                 <exclude reference="xGu-0M-mdE"/>
-                                <exclude reference="hNo-l4-GPt"/>
-                                <exclude reference="isY-XL-KFA"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -243,13 +243,13 @@
                                 <include reference="dHd-13-kwu"/>
                                 <include reference="e0g-Vt-QDY"/>
                                 <include reference="rsD-bz-NJJ"/>
+                                <include reference="hNo-l4-GPt"/>
+                                <include reference="isY-XL-KFA"/>
                                 <include reference="ZWp-mK-kte"/>
                                 <include reference="CHU-xx-iBp"/>
                                 <include reference="Y1G-bG-oKp"/>
                                 <include reference="sKh-zx-hPC"/>
                                 <include reference="xGu-0M-mdE"/>
-                                <include reference="hNo-l4-GPt"/>
-                                <include reference="isY-XL-KFA"/>
                             </mask>
                         </variation>
                     </view>
@@ -261,7 +261,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e9l-cB-nAa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1068" y="-25.5"/>
+            <point key="canvasLocation" x="1953" y="-3"/>
         </scene>
         <!--View Controller Three-->
         <scene sceneID="cVy-QJ-FMc">
@@ -334,7 +334,19 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="cM0-qE-OXK" kind="show" id="sfc-DI-4KS"/>
+                                    <segue destination="cM0-qE-OXK" kind="show" id="DdD-4u-Vdo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJK-y7-fMJ">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="338" y="20" width="0.0" height="0.0"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="iSa-ld-m0P" kind="presentation" identifier="segueTwo" animates="NO" id="CDJ-2F-Q4R"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -365,23 +377,24 @@
                                 <exclude reference="nV4-Xx-Xrd"/>
                                 <exclude reference="Ku7-ya-iYd"/>
                                 <exclude reference="4ek-ra-u8n"/>
+                                <exclude reference="YJK-y7-fMJ"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="U41-vR-Xv7"/>
-                                <exclude reference="jdQ-dz-KoH"/>
-                                <exclude reference="A63-fw-WE2"/>
-                                <exclude reference="Bsd-PU-gkl"/>
-                                <exclude reference="H9z-jX-oFJ"/>
-                                <exclude reference="IvQ-fB-beg"/>
-                                <exclude reference="pEY-2a-HuK"/>
                                 <exclude reference="l7U-ed-7pf"/>
                                 <exclude reference="lFN-FP-nnV"/>
-                                <exclude reference="ADo-ei-pC0"/>
-                                <exclude reference="NTP-5E-H7y"/>
+                                <exclude reference="A63-fw-WE2"/>
+                                <exclude reference="Bsd-PU-gkl"/>
                                 <exclude reference="IYl-CN-Llx"/>
                                 <exclude reference="clk-3l-S1f"/>
                                 <exclude reference="fhN-8C-0a9"/>
                                 <exclude reference="rsM-bu-Qec"/>
+                                <exclude reference="H9z-jX-oFJ"/>
+                                <exclude reference="IvQ-fB-beg"/>
+                                <exclude reference="pEY-2a-HuK"/>
+                                <exclude reference="U41-vR-Xv7"/>
+                                <exclude reference="jdQ-dz-KoH"/>
+                                <exclude reference="ADo-ei-pC0"/>
+                                <exclude reference="NTP-5E-H7y"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -393,26 +406,28 @@
                                 <include reference="nV4-Xx-Xrd"/>
                                 <include reference="Ku7-ya-iYd"/>
                                 <include reference="4ek-ra-u8n"/>
+                                <include reference="YJK-y7-fMJ"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="U41-vR-Xv7"/>
-                                <include reference="jdQ-dz-KoH"/>
-                                <include reference="A63-fw-WE2"/>
-                                <include reference="Bsd-PU-gkl"/>
-                                <include reference="H9z-jX-oFJ"/>
-                                <include reference="IvQ-fB-beg"/>
-                                <include reference="pEY-2a-HuK"/>
                                 <include reference="l7U-ed-7pf"/>
                                 <include reference="lFN-FP-nnV"/>
-                                <include reference="ADo-ei-pC0"/>
-                                <include reference="NTP-5E-H7y"/>
+                                <include reference="A63-fw-WE2"/>
+                                <include reference="Bsd-PU-gkl"/>
                                 <include reference="IYl-CN-Llx"/>
                                 <include reference="clk-3l-S1f"/>
                                 <include reference="fhN-8C-0a9"/>
                                 <include reference="rsM-bu-Qec"/>
+                                <include reference="H9z-jX-oFJ"/>
+                                <include reference="IvQ-fB-beg"/>
+                                <include reference="pEY-2a-HuK"/>
+                                <include reference="U41-vR-Xv7"/>
+                                <include reference="jdQ-dz-KoH"/>
+                                <include reference="ADo-ei-pC0"/>
+                                <include reference="NTP-5E-H7y"/>
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="Jhs-Sk-koC"/>
                     <connections>
                         <outlet property="currentWebView" destination="vxF-t7-P4w" id="0wD-WJ-5tz"/>
                         <outlet property="myLabel" destination="CP8-Ex-KEq" id="LAt-Mx-mRE"/>
@@ -420,7 +435,98 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y0h-gF-IDf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1936.5" y="-25.5"/>
+            <point key="canvasLocation" x="1953" y="678"/>
+        </scene>
+        <!--View Controller Four-->
+        <scene sceneID="uO6-Yr-G2o">
+            <objects>
+                <viewController id="iSa-ld-m0P" customClass="ViewControllerFour" customModule="WikiTag" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="n9f-dq-RHD"/>
+                        <viewControllerLayoutGuide type="bottom" id="nUU-s9-cMA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TwJ-ov-7yg">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Win!!!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mci-tX-AhG">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="90" y="143" width="220" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNN-Dn-JT7">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Return to Home">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="145" y="310" width="110" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="FGk-KR-CTN" kind="show" id="0fN-c2-6iu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your total clicks:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUR-Br-GKT">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="137" y="183" width="126" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJ1-r4-whw">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="180" y="233" width="40" height="40"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLR-cQ-s3X">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Play Again?">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="160" y="373" width="81" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="cM0-qE-OXK" kind="show" id="hXw-dV-SUg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.51356858191176369" blue="0.97277381650693573" alpha="0.57000000000000006" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="mci-tX-AhG"/>
+                                <exclude reference="oNN-Dn-JT7"/>
+                                <exclude reference="KUR-Br-GKT"/>
+                                <exclude reference="NJ1-r4-whw"/>
+                                <exclude reference="wLR-cQ-s3X"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="mci-tX-AhG"/>
+                                <include reference="oNN-Dn-JT7"/>
+                                <include reference="KUR-Br-GKT"/>
+                                <include reference="NJ1-r4-whw"/>
+                                <include reference="wLR-cQ-s3X"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="counterLabel" destination="NJ1-r4-whw" id="SVk-tB-UZm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Ah-uL-VwI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1210.5" y="678"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
