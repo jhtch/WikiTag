@@ -17,7 +17,7 @@ class ViewControllerFour: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        var counterInt:Int = Int(finalCounter)
+        var counterInt:Int = Int(finalCounter) + 1
         var counterString:String = String(format: "%d", counterInt)
         counterLabel.text = counterString
         

@@ -533,18 +533,12 @@
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="50"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="-129" y="-297" width="258" height="51"/>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your total clicks:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUR-Br-GKT">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="-66" y="-221" width="132" height="17"/>
-                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLR-cQ-s3X">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -552,9 +546,6 @@
                                 <state key="normal" title="Play Again">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="-83" y="-22" width="166" height="44"/>
-                                </variation>
                                 <connections>
                                     <segue destination="cM0-qE-OXK" kind="show" id="hXw-dV-SUg"/>
                                 </connections>
@@ -566,9 +557,6 @@
                                     <color key="titleColor" red="0.021077191429999999" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="-101" y="-109" width="202" height="43"/>
-                                </variation>
                                 <connections>
                                     <segue destination="FGk-KR-CTN" kind="show" id="0fN-c2-6iu"/>
                                 </connections>
@@ -578,9 +566,6 @@
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="40"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="-187" width="0.0" height="40"/>
-                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.11774642686513748" green="0.66617818754931868" blue="1" alpha="0.62" colorSpace="calibratedRGB"/>
