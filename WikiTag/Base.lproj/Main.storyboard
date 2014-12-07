@@ -383,12 +383,6 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CP8-Ex-KEq">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ize-Dg-PEn">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="BACK">
@@ -404,6 +398,9 @@
                                 <state key="normal" title="RESTART">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="287" y="88" width="66" height="30"/>
+                                </variation>
                                 <connections>
                                     <segue destination="cM0-qE-OXK" kind="show" id="DdD-4u-Vdo"/>
                                 </connections>
@@ -433,9 +430,19 @@
                                     <segue destination="iSa-ld-m0P" kind="presentation" identifier="segueTwo" animates="NO" id="CDJ-2F-Q4R"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CP8-Ex-KEq">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="259" y="89" width="25" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="CP8-Ex-KEq" firstAttribute="leading" secondItem="eik-sv-dQ0" secondAttribute="trailing" constant="2" id="7nf-bL-xa9"/>
                             <constraint firstItem="Ku7-ya-iYd" firstAttribute="top" secondItem="WRY-fo-l3L" secondAttribute="bottom" constant="13" id="9E7-oA-cxX"/>
                             <constraint firstAttribute="centerX" secondItem="Ku7-ya-iYd" secondAttribute="centerX" id="A63-fw-WE2"/>
                             <constraint firstItem="4ek-ra-u8n" firstAttribute="top" secondItem="WRY-fo-l3L" secondAttribute="bottom" constant="68" id="ADo-ei-pC0"/>
@@ -443,10 +450,9 @@
                             <constraint firstItem="ize-Dg-PEn" firstAttribute="top" secondItem="WRY-fo-l3L" secondAttribute="bottom" constant="68" id="IYl-CN-Llx"/>
                             <constraint firstItem="YJK-y7-fMJ" firstAttribute="top" secondItem="nV4-Xx-Xrd" secondAttribute="top" id="IsR-kx-WGT"/>
                             <constraint firstAttribute="centerX" secondItem="eik-sv-dQ0" secondAttribute="centerX" id="IvQ-fB-beg"/>
-                            <constraint firstItem="4ek-ra-u8n" firstAttribute="leading" secondItem="eik-sv-dQ0" secondAttribute="trailing" constant="23" id="NTP-5E-H7y"/>
-                            <constraint firstItem="CP8-Ex-KEq" firstAttribute="top" secondItem="eik-sv-dQ0" secondAttribute="bottom" constant="-3" id="U41-vR-Xv7"/>
+                            <constraint firstItem="CP8-Ex-KEq" firstAttribute="top" secondItem="WRY-fo-l3L" secondAttribute="bottom" constant="69" id="ZYF-Ac-u6L"/>
                             <constraint firstAttribute="trailingMargin" secondItem="YJK-y7-fMJ" secondAttribute="trailing" constant="46" id="iKQ-xx-9Wh"/>
-                            <constraint firstAttribute="centerX" secondItem="CP8-Ex-KEq" secondAttribute="centerX" id="jdQ-dz-KoH"/>
+                            <constraint firstItem="4ek-ra-u8n" firstAttribute="leading" secondItem="CP8-Ex-KEq" secondAttribute="trailing" constant="8" id="khS-LM-smX"/>
                             <constraint firstItem="nV4-Xx-Xrd" firstAttribute="top" secondItem="WRY-fo-l3L" secondAttribute="bottom" id="l7U-ed-7pf"/>
                             <constraint firstAttribute="centerX" secondItem="nV4-Xx-Xrd" secondAttribute="centerX" id="lFN-FP-nnV"/>
                             <constraint firstItem="eik-sv-dQ0" firstAttribute="top" secondItem="WRY-fo-l3L" secondAttribute="bottom" constant="68" id="pEY-2a-HuK"/>
@@ -460,10 +466,10 @@
                                 <exclude reference="Ku7-ya-iYd"/>
                                 <exclude reference="nV4-Xx-Xrd"/>
                                 <exclude reference="eik-sv-dQ0"/>
-                                <exclude reference="CP8-Ex-KEq"/>
                                 <exclude reference="ize-Dg-PEn"/>
                                 <exclude reference="4ek-ra-u8n"/>
                                 <exclude reference="YJK-y7-fMJ"/>
+                                <exclude reference="CP8-Ex-KEq"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="l7U-ed-7pf"/>
@@ -477,10 +483,10 @@
                                 <exclude reference="H9z-jX-oFJ"/>
                                 <exclude reference="IvQ-fB-beg"/>
                                 <exclude reference="pEY-2a-HuK"/>
-                                <exclude reference="U41-vR-Xv7"/>
-                                <exclude reference="jdQ-dz-KoH"/>
+                                <exclude reference="7nf-bL-xa9"/>
+                                <exclude reference="ZYF-Ac-u6L"/>
                                 <exclude reference="ADo-ei-pC0"/>
-                                <exclude reference="NTP-5E-H7y"/>
+                                <exclude reference="khS-LM-smX"/>
                                 <exclude reference="IsR-kx-WGT"/>
                                 <exclude reference="iKQ-xx-9Wh"/>
                             </mask>
@@ -491,10 +497,10 @@
                                 <include reference="Ku7-ya-iYd"/>
                                 <include reference="nV4-Xx-Xrd"/>
                                 <include reference="eik-sv-dQ0"/>
-                                <include reference="CP8-Ex-KEq"/>
                                 <include reference="ize-Dg-PEn"/>
                                 <include reference="4ek-ra-u8n"/>
                                 <include reference="YJK-y7-fMJ"/>
+                                <include reference="CP8-Ex-KEq"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="l7U-ed-7pf"/>
@@ -508,10 +514,10 @@
                                 <include reference="H9z-jX-oFJ"/>
                                 <include reference="IvQ-fB-beg"/>
                                 <include reference="pEY-2a-HuK"/>
-                                <include reference="U41-vR-Xv7"/>
-                                <include reference="jdQ-dz-KoH"/>
+                                <include reference="7nf-bL-xa9"/>
+                                <include reference="ZYF-Ac-u6L"/>
                                 <include reference="ADo-ei-pC0"/>
-                                <include reference="NTP-5E-H7y"/>
+                                <include reference="khS-LM-smX"/>
                                 <include reference="IsR-kx-WGT"/>
                                 <include reference="iKQ-xx-9Wh"/>
                             </mask>
