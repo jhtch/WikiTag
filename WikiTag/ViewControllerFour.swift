@@ -45,6 +45,10 @@ class ViewControllerFour:UIViewController  {
     
     @IBAction func submitScore(sender: AnyObject) {
         var initialsText = initials.text
+        if (initialsText == "")
+        {
+            initialsText = "anon"
+        }
         var object = PFObject(className: "RecentScores")
         object.setObject(startURL, forKey: "startPage")
         object.setObject(lastURL, forKey: "endPage")
@@ -52,6 +56,7 @@ class ViewControllerFour:UIViewController  {
         object.setObject(initialsText, forKey: "initials")
         object.saveInBackground()
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
