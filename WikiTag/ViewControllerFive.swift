@@ -33,6 +33,7 @@ class ViewControllerFive: UIViewController {
     var dataParse:NSMutableArray = NSMutableArray()
     
     override func viewDidLoad() {
+        // Do any additional setup after loading the view
         super.viewDidLoad()
         
         // query the contents of the database and load into array
@@ -46,7 +47,7 @@ class ViewControllerFive: UIViewController {
                 self.dataParse.addObject(object)
             }
             
-            // make a ton of labels
+            // set the text on the labels from the Parse database
             self.label1.text = self.dataParse[0].valueForKey("startPage") as? String
             self.label5.text = self.dataParse[1].valueForKey("startPage") as? String
             self.label9.text = self.dataParse[2].valueForKey("startPage") as? String
@@ -66,16 +67,9 @@ class ViewControllerFive: UIViewController {
             self.label8.text = self.dataParse[1].valueForKey("initials") as? String
             self.label12.text = self.dataParse[2].valueForKey("initials") as? String
             self.label16.text = self.dataParse[3].valueForKey("initials") as? String
-            //self.myLabel.text = object.valueForKey("endPage") as? String
         }
-        
-        
-        
-        
-
-        
     }
-    // Do any additional setup after loading the view, typically from a nib.
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

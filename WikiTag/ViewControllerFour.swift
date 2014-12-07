@@ -24,8 +24,8 @@ class ViewControllerFour:UIViewController  {
     
     
     override func viewDidLoad() {
+        // Do any additional setup after loading the view
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         // fix fencepost problem and print the counter
         var counterInt:Int = Int(finalCounter) + 1
@@ -43,7 +43,6 @@ class ViewControllerFour:UIViewController  {
         // convert end to plain text
         var endStr = endPageURL.lastPathComponent
         lastURL = endStr!.stringByReplacingOccurrencesOfString("_", withString: " ",options: NSStringCompareOptions.LiteralSearch,range: nil)
-        
     }
     
     // if the user doesn't submit initials, call them anon
@@ -63,8 +62,9 @@ class ViewControllerFour:UIViewController  {
     }
     
     override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        super.didReceiveMemoryWarning()
+        
     }
     
    

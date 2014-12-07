@@ -18,8 +18,8 @@ class ViewControllerTwo: UIViewController, UIWebViewDelegate {
     var destinationPass: NSURLRequest!
     
     override func viewDidLoad() {
+        // Do any additional setup after loading the view
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         // generate and load a random wikipedia page
         var randomURL = "http://en.wikipedia.org/wiki/Special:Random"
@@ -27,12 +27,11 @@ class ViewControllerTwo: UIViewController, UIWebViewDelegate {
         var destinationRequest = NSURLRequest(URL: url!)
         destinationWebView.loadRequest(destinationRequest)
         destinationWebView.delegate = self
-        
     }
     
     override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        super.didReceiveMemoryWarning()
     }
     
    @IBAction func didClickNewPage(sender: AnyObject) {
@@ -43,7 +42,6 @@ class ViewControllerTwo: UIViewController, UIWebViewDelegate {
         var destinationRequest = NSURLRequest(URL: url!)
         destinationWebView.loadRequest(destinationRequest)
         destinationPass = destinationRequest
-
     }
     
     @IBAction func didClickJesus(sender: AnyObject) {
@@ -58,12 +56,12 @@ class ViewControllerTwo: UIViewController, UIWebViewDelegate {
     
     func webViewDidFinishLoad(destinationWebView: UIWebView!) {
         
-        // pass the url
+        // set the URL to be passed
         var curURL = self.destinationWebView.request?.URL
         urlPass = curURL
     }
     
-    // pass the destination
+    // pass the destination via segue
     override func prepareForSegue(segue: (UIStoryboardSegue!), sender: AnyObject!) {
         if (segue.identifier == "segueOne") {
             

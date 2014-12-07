@@ -21,8 +21,11 @@ class ViewControllerThree: UIViewController, UIWebViewDelegate {
     var toPass: NSURL!
     var toPassTwo: NSURL!
     
+    var curURLStr: String!
+    var toPassStr: String!
+    
     override func viewDidLoad() {
-        
+        // Do any additional setup after loading the view
         super.viewDidLoad()
         
         // load a random wikipedia page
@@ -35,32 +38,40 @@ class ViewControllerThree: UIViewController, UIWebViewDelegate {
         // take the title of the wiki page and convert to plain text
         var endStr = toPass.lastPathComponent
         pageLabel.text = endStr!.stringByReplacingOccurrencesOfString("_", withString: " ",options: NSStringCompareOptions.LiteralSearch,range: nil)
-
     }
     
     override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        super.didReceiveMemoryWarning()
+    }
+    
+    //
+    func webViewDidStartLoad(currentWebView: UIWebView!) {
+        var curURL = self.currentWebView.request?.URL
+        curURLStr = curURL?.absoluteString
+        toPassStr = toPass?.absoluteString
     }
     
     // increment counter and check if the destination has been reached
     func webViewDidFinishLoad(currentWebView: UIWebView!) {
-        var currentURL = currentWebView.request?.URL.absoluteString
         counter += 0.5
         var counterInt:Int = Int(counter)
         var counterString:String = String(format: "%d", counterInt)
         myLabel.text = counterString
         
         var curURL = self.currentWebView.request?.URL
+        
+        // set the startURL variable to be passed as the current URL
         if (toPassTwo == nil)
         {
             toPassTwo = curURL
         }
-        if (curURL == toPass)
+        // if the page is the destination, then we have won!
+        
+        if (curURLStr.hasPrefix(toPassStr))
         {
             self.performSegueWithIdentifier("segueTwo", sender: self)
         }
-        
     }
     
     // implement back button
