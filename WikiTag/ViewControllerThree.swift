@@ -14,6 +14,8 @@ class ViewControllerThree: UIViewController, UIWebViewDelegate {
     @IBOutlet var currentWebView: UIWebView!
     var counter = 0.0
     
+    @IBOutlet var pageLabel: UILabel!
+    
     var toPass: NSURL!
     var toPassTwo: NSURL!
     
@@ -27,8 +29,8 @@ class ViewControllerThree: UIViewController, UIWebViewDelegate {
         currentWebView.loadRequest(currentRequest)
         currentWebView.delegate = self
         
-        var curURL = self.currentWebView.request?.URL
-        toPassTwo = curURL
+        var endStr = toPass.lastPathComponent
+        pageLabel.text = endStr!.stringByReplacingOccurrencesOfString("_", withString: " ",options: NSStringCompareOptions.LiteralSearch,range: nil)
 
     }
     
@@ -45,6 +47,10 @@ class ViewControllerThree: UIViewController, UIWebViewDelegate {
         myLabel.text = counterString
         
         var curURL = self.currentWebView.request?.URL
+        if (toPassTwo == nil)
+        {
+            toPassTwo = curURL
+        }
         if (curURL == toPass)
         {
             self.performSegueWithIdentifier("segueTwo", sender: self)
