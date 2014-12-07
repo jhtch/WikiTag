@@ -567,6 +567,28 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8v-cP-dOL">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="30"/>
+                                <state key="normal" title="Submit Score">
+                                    <color key="titleColor" red="0.21902232720000001" green="0.29396887710000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="95" y="462" width="211" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="submitScore:" destination="iSa-ld-m0P" eventType="touchUpInside" id="avL-KK-ZrM"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Initials" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Au4-vC-WJ6">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="152" y="511" width="97" height="30"/>
+                                </variation>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.11774642686513748" green="0.66617818754931868" blue="1" alpha="0.62" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -578,7 +600,9 @@
                             <constraint firstAttribute="centerX" secondItem="KUR-Br-GKT" secondAttribute="centerX" id="YXz-ry-Ft0"/>
                             <constraint firstAttribute="centerX" secondItem="oNN-Dn-JT7" secondAttribute="centerX" id="c9W-2o-e5o"/>
                             <constraint firstItem="KUR-Br-GKT" firstAttribute="top" secondItem="mci-tX-AhG" secondAttribute="bottom" constant="25" id="dXA-SM-8oc"/>
+                            <constraint firstAttribute="centerX" secondItem="I8v-cP-dOL" secondAttribute="centerX" constant="-0.5" id="g6N-iY-tuB"/>
                             <constraint firstAttribute="centerY" secondItem="wLR-cQ-s3X" secondAttribute="centerY" id="hHe-KT-nep"/>
+                            <constraint firstItem="I8v-cP-dOL" firstAttribute="top" secondItem="wLR-cQ-s3X" secondAttribute="bottom" constant="40" id="kgw-Ky-XM8"/>
                             <constraint firstItem="NJ1-r4-whw" firstAttribute="top" secondItem="KUR-Br-GKT" secondAttribute="bottom" constant="17" id="nJe-we-tiO"/>
                             <constraint firstAttribute="centerX" secondItem="wLR-cQ-s3X" secondAttribute="centerX" id="ntH-wf-3fA"/>
                         </constraints>
@@ -589,19 +613,23 @@
                                 <exclude reference="wLR-cQ-s3X"/>
                                 <exclude reference="oNN-Dn-JT7"/>
                                 <exclude reference="NJ1-r4-whw"/>
+                                <exclude reference="I8v-cP-dOL"/>
+                                <exclude reference="Au4-vC-WJ6"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="YXz-ry-Ft0"/>
-                                <exclude reference="dXA-SM-8oc"/>
+                                <exclude reference="9O4-hx-kUm"/>
                                 <exclude reference="IKX-gH-Ma9"/>
                                 <exclude reference="NOD-T2-IUH"/>
                                 <exclude reference="nJe-we-tiO"/>
-                                <exclude reference="9O4-hx-kUm"/>
+                                <exclude reference="YXz-ry-Ft0"/>
+                                <exclude reference="dXA-SM-8oc"/>
                                 <exclude reference="LtW-cG-i2E"/>
                                 <exclude reference="c9W-2o-e5o"/>
                                 <exclude reference="O0F-CO-8Dl"/>
                                 <exclude reference="hHe-KT-nep"/>
                                 <exclude reference="ntH-wf-3fA"/>
+                                <exclude reference="g6N-iY-tuB"/>
+                                <exclude reference="kgw-Ky-XM8"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -611,24 +639,30 @@
                                 <include reference="wLR-cQ-s3X"/>
                                 <include reference="oNN-Dn-JT7"/>
                                 <include reference="NJ1-r4-whw"/>
+                                <include reference="I8v-cP-dOL"/>
+                                <include reference="Au4-vC-WJ6"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="YXz-ry-Ft0"/>
-                                <include reference="dXA-SM-8oc"/>
+                                <include reference="9O4-hx-kUm"/>
                                 <include reference="IKX-gH-Ma9"/>
                                 <include reference="NOD-T2-IUH"/>
                                 <include reference="nJe-we-tiO"/>
-                                <include reference="9O4-hx-kUm"/>
+                                <include reference="YXz-ry-Ft0"/>
+                                <include reference="dXA-SM-8oc"/>
                                 <include reference="LtW-cG-i2E"/>
                                 <include reference="c9W-2o-e5o"/>
                                 <include reference="O0F-CO-8Dl"/>
                                 <include reference="hHe-KT-nep"/>
                                 <include reference="ntH-wf-3fA"/>
+                                <include reference="g6N-iY-tuB"/>
+                                <include reference="kgw-Ky-XM8"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="counterLabel" destination="NJ1-r4-whw" id="SVk-tB-UZm"/>
+                        <outlet property="initials" destination="Au4-vC-WJ6" id="f6l-do-H9w"/>
+                        <outlet property="submitScore" destination="I8v-cP-dOL" id="XcY-fR-z2d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Ah-uL-VwI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -650,6 +684,22 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R16-x6-Xp8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fMB-V9-0KY">
+            <objects>
+                <viewController id="c0m-Ef-yYr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KzA-JU-QlL"/>
+                        <viewControllerLayoutGuide type="bottom" id="w7u-oK-Vfo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g0z-kx-H03">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gen-a8-pIF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>

@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		940E2D411A341FD80060EFF9 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940E2D401A341FD80060EFF9 /* Bolts.framework */; };
+		940E2D431A341FE10060EFF9 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940E2D421A341FE10060EFF9 /* Parse.framework */; };
+		940E2D451A3420990060EFF9 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940E2D441A3420990060EFF9 /* Accounts.framework */; };
+		940E2D471A3420A00060EFF9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940E2D461A3420A00060EFF9 /* AudioToolbox.framework */; };
+		940E2D491A3420A70060EFF9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940E2D481A3420A70060EFF9 /* CFNetwork.framework */; };
+		940E2D4B1A3420AE0060EFF9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940E2D4A1A3420AE0060EFF9 /* CoreGraphics.framework */; };
+		940E2D4D1A3420B50060EFF9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940E2D4C1A3420B50060EFF9 /* CoreLocation.framework */; };
+		940E2D4F1A3420C50060EFF9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 940E2D4E1A3420C50060EFF9 /* libz.dylib */; };
+		940E2D511A3420CD0060EFF9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940E2D501A3420CD0060EFF9 /* MobileCoreServices.framework */; };
+		940E2D531A3420D40060EFF9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940E2D521A3420D40060EFF9 /* QuartzCore.framework */; };
+		940E2D551A3420DB0060EFF9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940E2D541A3420DB0060EFF9 /* Security.framework */; };
+		940E2D571A3420E10060EFF9 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940E2D561A3420E10060EFF9 /* Social.framework */; };
+		940E2D591A3420E80060EFF9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940E2D581A3420E80060EFF9 /* StoreKit.framework */; };
+		940E2D5B1A3420F00060EFF9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940E2D5A1A3420F00060EFF9 /* SystemConfiguration.framework */; };
 		94CCF49C1A300B120009DF35 /* ViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CCF49B1A300B120009DF35 /* ViewControllerTwo.swift */; };
 		94CCF49E1A30237C0009DF35 /* ViewControllerThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CCF49D1A30237C0009DF35 /* ViewControllerThree.swift */; };
 		94EAF5471A33C69D00F453B9 /* ViewControllerFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EAF5461A33C69D00F453B9 /* ViewControllerFour.swift */; };
@@ -29,6 +43,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		940E2D3D1A341C270060EFF9 /* WikiTag-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WikiTag-Bridging-Header.h"; sourceTree = "<group>"; };
+		940E2D401A341FD80060EFF9 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = WikiTag/Bolts.framework; sourceTree = "<group>"; };
+		940E2D421A341FE10060EFF9 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = WikiTag/Parse.framework; sourceTree = "<group>"; };
+		940E2D441A3420990060EFF9 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		940E2D461A3420A00060EFF9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		940E2D481A3420A70060EFF9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		940E2D4A1A3420AE0060EFF9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		940E2D4C1A3420B50060EFF9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		940E2D4E1A3420C50060EFF9 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		940E2D501A3420CD0060EFF9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		940E2D521A3420D40060EFF9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		940E2D541A3420DB0060EFF9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		940E2D561A3420E10060EFF9 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		940E2D581A3420E80060EFF9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		940E2D5A1A3420F00060EFF9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		94CCF49B1A300B120009DF35 /* ViewControllerTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTwo.swift; sourceTree = "<group>"; };
 		94CCF49D1A30237C0009DF35 /* ViewControllerThree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerThree.swift; sourceTree = "<group>"; };
 		94EAF5461A33C69D00F453B9 /* ViewControllerFour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerFour.swift; sourceTree = "<group>"; };
@@ -49,6 +78,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				940E2D5B1A3420F00060EFF9 /* SystemConfiguration.framework in Frameworks */,
+				940E2D591A3420E80060EFF9 /* StoreKit.framework in Frameworks */,
+				940E2D571A3420E10060EFF9 /* Social.framework in Frameworks */,
+				940E2D551A3420DB0060EFF9 /* Security.framework in Frameworks */,
+				940E2D531A3420D40060EFF9 /* QuartzCore.framework in Frameworks */,
+				940E2D511A3420CD0060EFF9 /* MobileCoreServices.framework in Frameworks */,
+				940E2D4F1A3420C50060EFF9 /* libz.dylib in Frameworks */,
+				940E2D4D1A3420B50060EFF9 /* CoreLocation.framework in Frameworks */,
+				940E2D4B1A3420AE0060EFF9 /* CoreGraphics.framework in Frameworks */,
+				940E2D491A3420A70060EFF9 /* CFNetwork.framework in Frameworks */,
+				940E2D471A3420A00060EFF9 /* AudioToolbox.framework in Frameworks */,
+				940E2D451A3420990060EFF9 /* Accounts.framework in Frameworks */,
+				940E2D431A341FE10060EFF9 /* Parse.framework in Frameworks */,
+				940E2D411A341FD80060EFF9 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +108,20 @@
 		C4D9C8B91A26991100AD87E1 = {
 			isa = PBXGroup;
 			children = (
+				940E2D5A1A3420F00060EFF9 /* SystemConfiguration.framework */,
+				940E2D581A3420E80060EFF9 /* StoreKit.framework */,
+				940E2D561A3420E10060EFF9 /* Social.framework */,
+				940E2D541A3420DB0060EFF9 /* Security.framework */,
+				940E2D521A3420D40060EFF9 /* QuartzCore.framework */,
+				940E2D501A3420CD0060EFF9 /* MobileCoreServices.framework */,
+				940E2D4E1A3420C50060EFF9 /* libz.dylib */,
+				940E2D4C1A3420B50060EFF9 /* CoreLocation.framework */,
+				940E2D4A1A3420AE0060EFF9 /* CoreGraphics.framework */,
+				940E2D481A3420A70060EFF9 /* CFNetwork.framework */,
+				940E2D461A3420A00060EFF9 /* AudioToolbox.framework */,
+				940E2D441A3420990060EFF9 /* Accounts.framework */,
+				940E2D401A341FD80060EFF9 /* Bolts.framework */,
+				940E2D421A341FE10060EFF9 /* Parse.framework */,
 				C4D9C8C41A26991100AD87E1 /* WikiTag */,
 				C4D9C8DA1A26991100AD87E1 /* WikiTagTests */,
 				C4D9C8C31A26991100AD87E1 /* Products */,
@@ -92,6 +149,7 @@
 				C4D9C8CE1A26991100AD87E1 /* Images.xcassets */,
 				C4D9C8D01A26991100AD87E1 /* LaunchScreen.xib */,
 				C4D9C8C51A26991100AD87E1 /* Supporting Files */,
+				940E2D3D1A341C270060EFF9 /* WikiTag-Bridging-Header.h */,
 			);
 			path = WikiTag;
 			sourceTree = "<group>";
@@ -348,11 +406,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WikiTag",
+				);
 				INFOPLIST_FILE = WikiTag/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WikiTag/WikiTag-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -361,11 +426,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WikiTag",
+				);
 				INFOPLIST_FILE = WikiTag/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WikiTag/WikiTag-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
